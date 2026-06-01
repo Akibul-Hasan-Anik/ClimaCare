@@ -236,6 +236,3 @@ ClimaCare aims to provide a low-cost, explainable, and real-time weather forecas
 ## License
 
 This project is open-source and available for learning, research, and educational purposes.
-## License
-
-This project is licensed under the MIT License.
