@@ -28,27 +28,28 @@ The system predicts next-day rainfall, temperature, and humidity using trained m
 
 ## Technologies Used
 
+### Backend
+
 * Python
 * FastAPI
 * SQLModel
 * SQLite
 * JWT Authentication
 * bcrypt
-* Pandas
-* NumPy
 * Scikit-learn
 * XGBoost
 * Joblib
 * SHAP
+* Pandas
+* NumPy
+
+### Frontend
 * React
-* Vite
 * JavaScript
-* Bootstrap
-* React Bootstrap
-* Chart.js
 * Axios
-* ESP32
-* Arduino IDE
+* Tailwind CSS
+* Chart Visualization
+
 
 ## Hardware Components
 
@@ -60,13 +61,17 @@ The system predicts next-day rainfall, temperature, and humidity using trained m
 
 ## Machine Learning Models
 
-This project uses trained machine learning models for weather forecasting tasks.
-
-The deployed models include:
+This project uses trained machine learning models for weather forecasting tasks include:
 
 * Rainfall classification model
 * Temperature prediction model
 * Humidity prediction model
+
+The deployed models include:
+
+* XGBoost Classifier
+* XGBoost Regressor
+* Random Forest-based Models
 
 The backend loads the trained model files and uses current sensor values, lag features, rolling average features, seasonal features, and station information to generate predictions.
 
