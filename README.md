@@ -4,7 +4,7 @@ An explainable IoT and machine learning based microclimate forecasting system de
 
 ## Overview
 
-ClimaCare is a full-stack IoT-based weather monitoring and forecasting system. This project collects environmental sensor data using an ESP32-based hardware setup and sends the data to a FastAPI backend for storage, prediction, and explanation.
+It is a full-stack IoT-based weather monitoring and forecasting system. This project collects environmental sensor data using an ESP32-based hardware setup and sends the data to a FastAPI backend for storage, prediction, and explanation.
 
 The system predicts next-day rainfall, temperature, and humidity using trained machine learning models. It also uses Explainable AI to show why a prediction was made by displaying the contribution of important weather features. The frontend dashboard allows users to log in, view real-time sensor readings, observe recent weather trends, and inspect prediction explanations.
 
@@ -231,7 +231,7 @@ Through this project, the following concepts were practiced:
 
 ## Research Purpose
 
-ClimaCare aims to provide a low-cost, explainable, and real-time weather forecasting solution for microclimate monitoring. The system can support applications in agriculture, environmental monitoring, smart farming, and local weather-based decision support.
+It aims to provide a low-cost, explainable, and real-time weather forecasting solution for microclimate monitoring. The system can support applications in agriculture, environmental monitoring, smart farming, and local weather-based decision support.
 
 ## License
 
