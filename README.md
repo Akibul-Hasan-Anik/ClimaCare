@@ -4,9 +4,7 @@ An explainable IoT and machine learning based microclimate forecasting system de
 
 ## Overview
 
-It is a full-stack IoT-based weather monitoring and forecasting system. This project collects environmental sensor data using an ESP32-based hardware setup and sends the data to a FastAPI backend for storage, prediction, and explanation.
-
-The system predicts next-day rainfall, temperature, and humidity using trained machine learning models. It also uses Explainable AI to show why a prediction was made by displaying the contribution of important weather features. The frontend dashboard allows users to log in, view real-time sensor readings, observe recent weather trends, and inspect prediction explanations.
+It is a full-stack IoT-based weather monitoring and forecasting system. This project collects environmental sensor data using an ESP32-based hardware setup and sends the data to a FastAPI backend for storage, prediction, and explanation. This system predicts next-day rainfall, temperature, and humidity using trained machine learning models. It also uses Explainable AI to show why a prediction was made by displaying the contribution of important weather features. The frontend dashboard allows users to log in, view real-time sensor readings, observe recent weather trends, and inspect prediction explanations.
 
 ## Features
 
@@ -19,12 +17,9 @@ The system predicts next-day rainfall, temperature, and humidity using trained m
 * Temperature prediction
 * Humidity prediction
 * SHAP-based prediction explanation
-* Feature impact visualization for weather forecasting
 * React-based user dashboard
 * Recent weather trend visualization
 * Station-based weather prediction
-* Beginner-friendly full-stack project structure
-* Easy to customize and expand
 
 ## Technologies Used
 
@@ -77,7 +72,7 @@ The backend loads the trained model files and uses current sensor values, lag fe
 
 ## Explainable AI
 
-ClimaCare uses SHAP-based Explainable AI to make the machine learning predictions more understandable.
+This system uses SHAP-based Explainable AI to make the machine learning predictions more understandable.
 
 The explanation system shows the impact of different weather features such as:
 
@@ -123,102 +118,7 @@ ClimaCare-main/
 └── README.md                         # Project documentation
 ```
 
-## How to Run the Project
-
-1. Clone the repository.
-```bash
-git clone <repository-link>
-```
-2. Open the project folder.
-```bash
-cd ClimaCare-main
-```
-3. Open the backend folder.
-```bash
-cd Backend
-```
-4. Create and activate a virtual environment.
-```bash
-python -m venv env
-```
-For Windows:
-```bash
-env\Scripts\activate
-```
-For Linux or macOS:
-```bash
-source env/bin/activate
-```
-5. Install the required backend dependencies.
-```bash
-pip install -r requirements.txt
-```
-6. Run the FastAPI backend server.
-```bash
-python -m fastapi dev xai.py
-```
-7. Open the backend API in your browser.
-```text
-http://127.0.0.1:8000
-```
-8. Open the FastAPI documentation.
-```text
-http://127.0.0.1:8000/docs
-```
-9. Open a new terminal and go to the frontend folder.
-```bash
-cd Frontend
-```
-10. Install the frontend dependencies.
-```bash
-npm install
-```
-11. Run the React frontend.
-```bash
-npm run dev
-```
-12. Open the frontend in your browser.
-```text
-http://localhost:5173
-```
-
-## API Endpoints
-
-### Authentication
-
-```text
-POST /register
-POST /token
-```
-
-### Sensor Data
-
-```text
-POST /send-data/
-GET /data/user
-GET /data/user/latest
-```
-
-### Prediction and Explanation
-
-```text
-POST /predict-explain
-```
-
-## Example Prediction Output
-
-The prediction API returns:
-
-* Rain tomorrow probability
-* Rain tomorrow prediction
-* Tomorrow temperature
-* Tomorrow humidity
-* SHAP-based feature contribution explanations
-* Feature impact levels for rainfall, temperature, and humidity predictions
-
 ## Learning Purpose
-
-This project was developed for learning, research, and practical implementation purposes. The main goal of this project is to understand how IoT sensor data, machine learning, backend APIs, frontend dashboards, and Explainable AI can be combined to build a real-time microclimate forecasting system.
 
 Through this project, the following concepts were practiced:
 
@@ -233,10 +133,6 @@ Through this project, the following concepts were practiced:
 * React frontend development
 * Real-time dashboard visualization
 * Full-stack IoT and ML system integration
-
-## Research Purpose
-
-It aims to provide a low-cost, explainable, and real-time weather forecasting solution for microclimate monitoring. The system can support applications in agriculture, environmental monitoring, smart farming, and local weather-based decision support.
 
 ## License
 
